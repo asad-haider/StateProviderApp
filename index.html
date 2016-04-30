@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" >
+<head >
+    <meta charset="UTF-8">
+    <title>State Provider App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-resource.min.js"></script>
+    <script src="app.js" ></script>
+
+    <script src="components/home/home.js"></script>
+    <script src="components/about/about.js"></script>
+    <script src="components/contact/contact.js"></script>
+    <script src="components/naat/naat.js"></script>
+    <script src="components/naat/album.js"></script>
+
+</head>
+<body>
+<div ng-include="'shared/navbar/navigation.html'">
+</div>
+
+
+<div ui-view class="container" >
+</div>
+</body>
+</html>

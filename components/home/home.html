@@ -1,0 +1,27 @@
+<!--<div class="jumbotron text-center">-->
+    <!--<h1>{{title}} Controller</h1>-->
+
+    <!--<ul>-->
+        <!--<li ng-repeat="friend in friends">-->
+            <!--<input type="text" ng-model="friend.firstName">-->
+            <!--<input type="text" ng-model="friend.lastName">-->
+        <!--</li>-->
+    <!--</ul>-->
+
+    <!--<button class="btn btn-primary" ng-click="save()">Save</button>-->
+
+    <!--{{json}}-->
+<!--</div>-->
+
+<div class="container">
+    <input type="text" ng-model="cityName">
+    <button class="btn btn-primary" ng-click="getTemperature()">Search</button>
+</div>
+
+<div class="list-group">
+   <search-result
+           city-name="{{temperatureResult.name}}" lat="{{temperatureResult.coord.lat}}" lng="{{temperatureResult.coord.lon}}" current-temp="{{temperatureResult.main.temp}}"
+   min-temp="{{temperatureResult.main.temp_min}}" max-temp="{{temperatureResult.main.temp_min}}" humidity="{{temperatureResult.main.humidity}}" pressure="{{temperatureResult.main.pressure}}"
+   ></search-result>
+
+</div>

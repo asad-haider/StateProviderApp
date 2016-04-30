@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/app.js" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/components/home/home.html" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/components/home/home.js" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/components/naat/album.js" libraries="{angular, angular-route}" />
+    <file url="file://$PROJECT_DIR$/components/naat/naat.html" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/components/naat/naat.js" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/directives/reciters.html" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/services/friends.js" libraries="{angular}" />
+    <file url="PROJECT" libraries="{angular-resource, angular-ui-router}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>
