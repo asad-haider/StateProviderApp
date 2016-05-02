@@ -1,5 +1,23 @@
 <div class="container">
-    <div class="list-group">
-        <reciters reciter-object="reciter" ng-repeat="reciter in reciters"></reciters>
-    </div>
+    <uib-accordion>
+        <uib-accordion-group  ng-repeat="reciter in reciters">
+            <uib-accordion-heading>
+                <div class="row" >
+                    <div class="col-md-1">
+                        <img class="img-circle" ng-src="{{reciter.picture_url}}" imageonload width="70px"/>
+                    </div>
+                    <div class="col-md-11">
+                        <h3>{{reciter.name}}</h3>
+                    </div>
+                </div>
+            </uib-accordion-heading>
+
+            <ul>
+                <div class="list-group">
+                    <albums album-object="album" ng-repeat="album in reciter.albums"></albums>
+                </div>
+            </ul>
+
+        </uib-accordion-group>
+    </uib-accordion>
 </div>

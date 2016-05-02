@@ -9,7 +9,7 @@
     <file url="file://$PROJECT_DIR$/components/naat/naat.js" libraries="{angular}" />
     <file url="file://$PROJECT_DIR$/directives/reciters.html" libraries="{angular}" />
     <file url="file://$PROJECT_DIR$/services/friends.js" libraries="{angular}" />
-    <file url="PROJECT" libraries="{angular-resource, angular-ui-router}" />
+    <file url="PROJECT" libraries="{angular-animate, angular-resource, angular-ui-router, ui-bootstrap-tpls-1.3.2}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

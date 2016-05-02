@@ -2,7 +2,7 @@
  * Created by Asad on 4/28/2016.
  */
 
-var app = angular.module('app', ['ui.router', 'ngResource'])
+var app = angular.module('app', ['ui.router', 'ngResource', 'ngAnimate', 'ui.bootstrap'])
     .config(['$urlRouterProvider', '$stateProvider', '$httpProvider',
         function ($urlRouterProvider, $stateProvider, $httpProvider) {
             $urlRouterProvider.otherwise('/');
@@ -32,7 +32,7 @@ var app = angular.module('app', ['ui.router', 'ngResource'])
                     controller: 'naatCtrl'
                 })
                 .state('album', {
-                    url: '/album/:reciterID',
+                    url: '/album/:reciterID/:albumID',
                     templateUrl: 'components/naat/album.html',
                     controller: 'albumCtrl'
                 })

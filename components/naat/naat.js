@@ -6,10 +6,24 @@ angular.module('app')
       $http.get('https://bbmserver.herokuapp.com/allreciters')
                 .success(function (data) {
                     $scope.reciters = data.reciters;
+
+                    angular.forEach($scope.reciters, function(value, key){
+                        $http.get('https://bbmserver.herokuapp.com/'+ value._id +'/allalbums')
+                            .success(function (data) {
+                                value.albums = data.albums;
+                                
+                            })
+                            .error(function (data, status, headers, config) {
+
+                            });
+                    });
                 })
+
                 .error(function (data, status, headers, config) {
 
                 });
+
+
         
     }]);
 
@@ -24,12 +38,12 @@ angular.module('app').directive('imageonload', function() {
 });
 
 angular.module('app')
-    .directive("reciters", function () {
-    return {
-        templateUrl: 'directives/reciters.html',
-        replace: 'true',
-        scope: {
-            reciterObject: '='
+    .directive("albums", function () {
+        return {
+            templateUrl: 'directives/albums.html',
+            replace: 'true',
+            scope: {
+                albumObject: '='
+            }
         }
-    }
-});
+    });
